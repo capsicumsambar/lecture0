@@ -1,0 +1,23 @@
+$color:rgb(200,100,150);
+$color-link: red;
+$color-div: green;
+
+
+h1 {
+        		text-align: center;
+        		color: $color;
+        	}
+
+p{
+	font-size: 25px;
+	text-align: center;
+	color: $color;
+
+	a {
+		color: $color-link;
+	}
+}
+
+div{
+	color:$color-div;
+}
