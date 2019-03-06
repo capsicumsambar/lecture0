@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My reading feed</title>    
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <!-- End Bootstrap CDN -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- for scss -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+          <h1>My reading feed</h1>
+          <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cricket.html">Cricket</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conversation.html">The Conversation</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+        <div class="all-container">
+          <div class="clock-container">
+              <table style="width:100%">
+                <tr>
+                  <th>India </th>
+                  <td><iframe src="http://free.timeanddate.com/clock/i6nvhbiy/n553/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="110" height="110"></iframe></td> 
+                </tr>
+                <tr> 
+                 <th>Central (US)</th>             
+                 <td><iframe src="http://free.timeanddate.com/clock/i6nvhbiy/n24/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="110" height="110"></iframe></td>               
+                </tr>
+                <tr>
+                  <th>GMT</th>
+                  <td><iframe src="http://free.timeanddate.com/clock/i6nvhbiy/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="110" height="110"></iframe></td>
+                </tr>
+              </table>     
+
+          </div>
+
+          <div class="feed-container">
+
+            <div class="news-page-specific-container">
+              <!-- News -->
+              <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=https%3A%2F%2Fwww.npr.org%2Frss%2Frss.php%3Fid%3D1001&chan=title&num=5&desc=1&au=y&date=y&targ=y&utf=y&html=p"  charset="UTF-8" type="text/javascript"></script>
+
+              <!-- Austin news -->
+              <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=https%3A%2F%2Fwww.kut.org%2Ffeeds%2Fterm%2F29%2Frss.xml&chan=title&num=5&au=y&date=y&targ=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+            </div>
+          </div> 
+        </div>
+    </body>
+</html>

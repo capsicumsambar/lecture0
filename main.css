@@ -1,0 +1,97 @@
+  
+  * {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+
+    }
+  body {
+      margin: 0;
+    }
+    .jumbotron{
+      background-color: white;
+    }
+  .jumbotron h1{
+    color: green;
+    margin-bottom: 50px;
+
+   }
+  .all-container{
+    display: flex;
+   }
+   .clock-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+
+  }
+      table, th, td {
+    text-align: center;
+    padding: 10px;
+      }
+  .clock-container iframe{
+    margin: 0 50px;
+  }
+  .feed-container{
+    display:flex;
+    flex-direction: row; 
+
+    /*border: 1px solid black;*/
+    margin-bottom: 40px;
+    margin-right: 40px;
+
+  }
+  .news-page-specific-container {
+    display: flex;
+
+  }
+
+
+
+          /*begin styles for RSS Feed */
+
+          .rss-box {
+             background-color: #FFF;
+             margin: 0 auto;
+             padding: 0 20px;
+             flex: 1 1 0;
+             /*border: 1px solid black;*/
+                       
+          }
+          .rss-items {
+            margin-top:0px;
+            padding:0.5em; 
+            margin-left:0px;
+            color:#000000;
+          }
+          p.rss-title {padding:0.5em;}
+          .rss-title {
+            font-size: 16pt;
+            background-color: white;
+            color: black;
+            font-weight:bold;
+
+            text-align: left;
+          }
+
+          .rss-item  {
+            font-size: 12pt;
+            list-style:none;
+            padding-bottom:1em;
+          }
+
+          .rss-item a {
+            color:black;
+            font-size: 12pt;
+            font-weight: bold;
+            }
+            
+          .rss-item a:visited {
+            color: blue;
+          }
+
+          .rss-date {
+            font-size: 12pt;
+            color: red;
+            } 
+/*# End of RSS feed styling */
